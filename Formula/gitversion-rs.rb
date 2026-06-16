@@ -6,26 +6,26 @@ class GitversionRs < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/zcube/gitversion-rs/releases/download/v0.1.0/gitversion-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "6d9d45a7e511362c65dada7f2af48b7948969f511afb13c77465f01cc426af8c"
+      url "https://github.com/zcube/gitversion-rs/releases/download/v0.1.0/gitversion-rs-v0.1.0-aarch64-apple-darwin.tar.gz"
+      sha256 "3181d4bf99b63146709b1fe02a4a2b8413caa21b30ba422e89ed89389df49ea2"
     else
-      url "https://github.com/zcube/gitversion-rs/releases/download/v0.1.0/gitversion-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "7b7cc0460ae4e8e923a35c8ac20457ae7b0c70c6ac60af7f239f9f727195c0ca"
+      url "https://github.com/zcube/gitversion-rs/releases/download/v0.1.0/gitversion-rs-v0.1.0-x86_64-apple-darwin.tar.gz"
+      sha256 "b8015f2b4cfda53cc9b4c8cd94ac7649df37ba7a7b28ff4717f88a9fa837508d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/zcube/gitversion-rs/releases/download/v0.1.0/gitversion-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "73eb17d97f0f8f9b7f65802bc00383b08185fb98bb4d50edea50fdee6510b720"
+      url "https://github.com/zcube/gitversion-rs/releases/download/v0.1.0/gitversion-rs-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c76549717debadff00a0c1423e9ba34f2b4667177800cc7a93706edb8ee8ab85"
     else
-      url "https://github.com/zcube/gitversion-rs/releases/download/v0.1.0/gitversion-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6ea93ed49f54834c826ddc064f59cb536f3d553cb17e37abdad81eeaa6e51ae9"
+      url "https://github.com/zcube/gitversion-rs/releases/download/v0.1.0/gitversion-rs-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8aef03a6ad17e224e9f11c9025885d1851195f90cd8c8e70f1ea03031ed7c815"
     end
   end
 
   def install
-    bin.install "gitversion" => "gitversion-rs"
+    bin.install "gitversion-rs"
   end
 
   test do
