@@ -1,4 +1,4 @@
-class Gitversion < Formula
+class GitversionRs < Formula
   desc "Rust port of GitVersion - semantic versioning from Git history"
   homepage "https://github.com/zcube/gitversion-rs"
   version "0.1.0"
@@ -25,10 +25,10 @@ class Gitversion < Formula
   end
 
   def install
-    bin.install "gitversion"
+    bin.install "gitversion" => "gitversion-rs"
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/gitversion --version")
+    assert_match version.to_s, shell_output("#{bin}/gitversion-rs --version")
   end
 end
