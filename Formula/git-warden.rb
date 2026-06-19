@@ -7,11 +7,11 @@ class GitWarden < Formula
   on_macos do
     on_arm do
       url "https://github.com/zcube/git-warden/releases/download/v0.1.0/git-warden_v0.1.0_aarch64-apple-darwin.tar.gz"
-      sha256 "e24164eefe4fbdd47b8935649c2066ed39b6ad55ae4a5f453300ec91903aca9d"
+      sha256 "7d42a100a4c7282193c0c0b795bceee1cfb6d235cac43e3a2c3179a4229835d3"
     end
     on_intel do
       url "https://github.com/zcube/git-warden/releases/download/v0.1.0/git-warden_v0.1.0_x86_64-apple-darwin.tar.gz"
-      sha256 "4420538eef16ab17b868b4008897e9958edfc2c6eece3fa3279de567d0a6319c"
+      sha256 "dee4b5a5c7b0f028a926ef60ccfdadb83d2055e4f79a706153774f56473844f9"
     end
   end
 
