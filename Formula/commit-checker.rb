@@ -1,26 +1,26 @@
 class CommitChecker < Formula
   desc "Git commit message and source code policy checker"
   homepage "https://github.com/zcube/commit-checker"
-  version "1.6.0"
+  version "1.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/zcube/commit-checker/releases/download/v1.6.0/commit-checker_v1.6.0_darwin_arm64.tar.gz"
-      sha256 "ec4a7e99c63f418f651ec6047ca8eff06ce27295e407967669848801e053899d"
+      url "https://github.com/zcube/commit-checker/releases/download/v1.7.0/commit-checker_v1.7.0_darwin_arm64.tar.gz"
+      sha256 "b6b72e1aa79bfbdfaad28b49fcef96c346977b8c159eadee80d2d8624661b426"
     else
-      url "https://github.com/zcube/commit-checker/releases/download/v1.6.0/commit-checker_v1.6.0_darwin_amd64.tar.gz"
-      sha256 "a1213f8499a246ff1e5bbbee51ecf42b989e84d8b707fb293e4d281a60448cdd"
+      url "https://github.com/zcube/commit-checker/releases/download/v1.7.0/commit-checker_v1.7.0_darwin_amd64.tar.gz"
+      sha256 "6aeb89baf52deaf2cfc6c61b2fc34eea114cfb55b1cc1b2ef513098a4efaf5c1"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/zcube/commit-checker/releases/download/v1.6.0/commit-checker_v1.6.0_linux_arm64.tar.gz"
-      sha256 "e743875fa772c2f7ce6d706d3764a9b7a2b86d9b7a1867e285b1646cb4aaedb0"
+      url "https://github.com/zcube/commit-checker/releases/download/v1.7.0/commit-checker_v1.7.0_linux_arm64.tar.gz"
+      sha256 "8c495d9c70971af2ea1be42890caba72cdcbfb267a67e7de5f21ec9a717598fb"
     else
-      url "https://github.com/zcube/commit-checker/releases/download/v1.6.0/commit-checker_v1.6.0_linux_amd64.tar.gz"
-      sha256 "18288189a55d12b6def88958f7b92c4af16357b5d782e715f1304eb00bfe9f3a"
+      url "https://github.com/zcube/commit-checker/releases/download/v1.7.0/commit-checker_v1.7.0_linux_amd64.tar.gz"
+      sha256 "6807ec323c33ba8d0ca54389c74adda90a03e61c788b13ead3c2824d206a662f"
     end
   end
 
